@@ -16,6 +16,9 @@
 		413184B12150A87F00FAF80C /* PhotosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 413184AF2150A87F00FAF80C /* PhotosViewController.xib */; };
 		413184B32150A8C300FAF80C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413184B22150A8C300FAF80C /* Constants.swift */; };
 		413184B62150A93E00FAF80C /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413184B52150A93E00FAF80C /* UIViewController+Extensions.swift */; };
+		413184BA2150AD7200FAF80C /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413184B92150AD7200FAF80C /* Reusable.swift */; };
+		413184BC2150AD8B00FAF80C /* UITableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413184BB2150AD8B00FAF80C /* UITableViewCell+Extensions.swift */; };
+		413184BE2150ADF600FAF80C /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413184BD2150ADF600FAF80C /* UITableView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		413184AF2150A87F00FAF80C /* PhotosViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotosViewController.xib; sourceTree = "<group>"; };
 		413184B22150A8C300FAF80C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		413184B52150A93E00FAF80C /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		413184B92150AD7200FAF80C /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		413184BB2150AD8B00FAF80C /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
+		413184BD2150ADF600FAF80C /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,7 @@
 				413184A32150A7FF00FAF80C /* Views */,
 				413184A42150A80400FAF80C /* Models */,
 				413184A52150A80A00FAF80C /* Controllers */,
+				413184B82150AD6100FAF80C /* Protocols */,
 				413184B42150A92D00FAF80C /* Extensions */,
 				4131849E2150A78A00FAF80C /* Supporting Files */,
 			);
@@ -112,8 +119,18 @@
 			isa = PBXGroup;
 			children = (
 				413184B52150A93E00FAF80C /* UIViewController+Extensions.swift */,
+				413184BD2150ADF600FAF80C /* UITableView+Extensions.swift */,
+				413184BB2150AD8B00FAF80C /* UITableViewCell+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		413184B82150AD6100FAF80C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				413184B92150AD7200FAF80C /* Reusable.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,9 +227,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				413184BA2150AD7200FAF80C /* Reusable.swift in Sources */,
 				413184B02150A87F00FAF80C /* PhotosViewController.swift in Sources */,
 				4131848D2150A75800FAF80C /* AppDelegate.swift in Sources */,
+				413184BE2150ADF600FAF80C /* UITableView+Extensions.swift in Sources */,
 				413184B62150A93E00FAF80C /* UIViewController+Extensions.swift in Sources */,
+				413184BC2150AD8B00FAF80C /* UITableViewCell+Extensions.swift in Sources */,
 				413184AC2150A87100FAF80C /* ListViewController.swift in Sources */,
 				413184B32150A8C300FAF80C /* Constants.swift in Sources */,
 			);
