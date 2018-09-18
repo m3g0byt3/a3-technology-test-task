@@ -8,4 +8,13 @@
 
 import Foundation
 
-protocol PhotosServiceProtocol {}
+protocol PhotosServiceProtocol {
+
+        // MARK: - Typealiases
+
+        typealias Completion = (Result<[Photo], NetworkError>) -> Void
+
+        // MARK: - Protocol requirements
+
+        func getPhotos(user: User, page: Int, completion: @escaping Completion)
+}

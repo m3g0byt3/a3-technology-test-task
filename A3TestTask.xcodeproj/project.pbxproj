@@ -38,6 +38,12 @@
 		414ABFAB2150C91000FDE536 /* AssemblyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABFAA2150C91000FDE536 /* AssemblyProtocol.swift */; };
 		414ABFAE2150C9BE00FDE536 /* ApplicationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABFAD2150C9BE00FDE536 /* ApplicationAssembly.swift */; };
 		414ABFB22150CFD900FDE536 /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABFB12150CFD900FDE536 /* Configurator.swift */; };
+		4197F72F21511E0400E57EDE /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4197F72E21511E0400E57EDE /* Photo.swift */; };
+		4197F73121511F4500E57EDE /* JSONPlaceholderPhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4197F73021511F4500E57EDE /* JSONPlaceholderPhotoService.swift */; };
+		4197F73321513DEE00E57EDE /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4197F73221513DEE00E57EDE /* Album.swift */; };
+		4197F7382151427200E57EDE /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4197F7362151427200E57EDE /* PhotoCell.swift */; };
+		4197F7392151427200E57EDE /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4197F7372151427200E57EDE /* PhotoCell.xib */; };
+		4197F73B2151462900E57EDE /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4197F73A2151462900E57EDE /* UIImageView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +80,12 @@
 		414ABFAA2150C91000FDE536 /* AssemblyProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssemblyProtocol.swift; sourceTree = "<group>"; };
 		414ABFAD2150C9BE00FDE536 /* ApplicationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationAssembly.swift; sourceTree = "<group>"; };
 		414ABFB12150CFD900FDE536 /* Configurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurator.swift; sourceTree = "<group>"; };
+		4197F72E21511E0400E57EDE /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		4197F73021511F4500E57EDE /* JSONPlaceholderPhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONPlaceholderPhotoService.swift; sourceTree = "<group>"; };
+		4197F73221513DEE00E57EDE /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		4197F7362151427200E57EDE /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		4197F7372151427200E57EDE /* PhotoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCell.xib; sourceTree = "<group>"; };
+		4197F73A2151462900E57EDE /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +147,8 @@
 			children = (
 				413184BF2150B07100FAF80C /* UserCell.swift */,
 				413184C02150B07100FAF80C /* UserCell.xib */,
+				4197F7362151427200E57EDE /* PhotoCell.swift */,
+				4197F7372151427200E57EDE /* PhotoCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -143,6 +157,8 @@
 			isa = PBXGroup;
 			children = (
 				413184C92150B50000FAF80C /* User.swift */,
+				4197F72E21511E0400E57EDE /* Photo.swift */,
+				4197F73221513DEE00E57EDE /* Album.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -165,6 +181,7 @@
 				413184BD2150ADF600FAF80C /* UITableView+Extensions.swift */,
 				413184BB2150AD8B00FAF80C /* UITableViewCell+Extensions.swift */,
 				414ABFA22150C2E900FDE536 /* URLSessionConfiguration+Extensions.swift */,
+				4197F73A2151462900E57EDE /* UIImageView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -199,6 +216,7 @@
 			children = (
 				414ABF942150B80B00FDE536 /* JSONPlaceholderAPI.swift */,
 				414ABFA02150C10600FDE536 /* JSONPlaceholderUserService.swift */,
+				4197F73021511F4500E57EDE /* JSONPlaceholderPhotoService.swift */,
 			);
 			path = JSONPlaceholder;
 			sourceTree = "<group>";
@@ -281,6 +299,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4197F7392151427200E57EDE /* PhotoCell.xib in Resources */,
 				413184A22150A7D100FAF80C /* LaunchScreen.storyboard in Resources */,
 				413184C22150B07100FAF80C /* UserCell.xib in Resources */,
 				413184B12150A87F00FAF80C /* PhotosViewController.xib in Resources */,
@@ -319,7 +338,9 @@
 			files = (
 				414ABF9B2150BC7B00FDE536 /* NetworkError.swift in Sources */,
 				414ABF952150B80B00FDE536 /* JSONPlaceholderAPI.swift in Sources */,
+				4197F73321513DEE00E57EDE /* Album.swift in Sources */,
 				413184C42150B0A100FAF80C /* Configurable.swift in Sources */,
+				4197F72F21511E0400E57EDE /* Photo.swift in Sources */,
 				414ABFA32150C2E900FDE536 /* URLSessionConfiguration+Extensions.swift in Sources */,
 				413184BA2150AD7200FAF80C /* Reusable.swift in Sources */,
 				414ABF9D2150BD0F00FDE536 /* Provider.swift in Sources */,
@@ -327,11 +348,14 @@
 				413184C12150B07100FAF80C /* UserCell.swift in Sources */,
 				414ABF902150B74700FDE536 /* APIProtocol.swift in Sources */,
 				414ABF972150BB3200FDE536 /* URLRepresentable.swift in Sources */,
+				4197F73B2151462900E57EDE /* UIImageView+Extensions.swift in Sources */,
 				414ABFA52150C7AB00FDE536 /* Presentable.swift in Sources */,
 				414ABF992150BC3A00FDE536 /* Result.swift in Sources */,
 				413184B02150A87F00FAF80C /* PhotosViewController.swift in Sources */,
 				4131848D2150A75800FAF80C /* AppDelegate.swift in Sources */,
+				4197F7382151427200E57EDE /* PhotoCell.swift in Sources */,
 				413184BE2150ADF600FAF80C /* UITableView+Extensions.swift in Sources */,
+				4197F73121511F4500E57EDE /* JSONPlaceholderPhotoService.swift in Sources */,
 				413184B62150A93E00FAF80C /* UIViewController+Extensions.swift in Sources */,
 				414ABFAE2150C9BE00FDE536 /* ApplicationAssembly.swift in Sources */,
 				413184C82150B20600FAF80C /* NIBRepresentable.swift in Sources */,

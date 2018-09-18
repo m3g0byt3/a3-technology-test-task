@@ -37,7 +37,11 @@ extension ApplicationAssembly: AssemblyProtocol {
 
         case .photos(let user):
             let viewController = PhotosViewController.fromNib()
+            guard case .photos(let photosService) = service else {
+                fatalError("Unable to resolve dependency ")
+            }
 
+            viewController.photosService = photosService
             viewController.user = user
             viewController.navigationItem.title = Constants.Strings.photosTitle
 
@@ -52,10 +56,13 @@ extension ApplicationAssembly: AssemblyProtocol {
             let userProvider = Provider<JSONPlaceholderAPI>(configuration: .shortTimeouts)
             let userService = JSONPlaceholderUserService(provider: userProvider)
 
-            return Service.users(userService)
+            return .users(userService)
 
         case .photos:
-            fatalError()
+            let photosProvider = Provider<JSONPlaceholderAPI>(configuration: .shortTimeouts)
+            let photosService = JSONPlaceholderPhotoService(provider: photosProvider)
+
+            return .photos(photosService)
         }
     }
 }
