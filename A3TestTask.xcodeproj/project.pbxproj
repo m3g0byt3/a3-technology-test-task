@@ -38,6 +38,7 @@
 		414ABFAB2150C91000FDE536 /* AssemblyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABFAA2150C91000FDE536 /* AssemblyProtocol.swift */; };
 		414ABFAE2150C9BE00FDE536 /* ApplicationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABFAD2150C9BE00FDE536 /* ApplicationAssembly.swift */; };
 		414ABFB22150CFD900FDE536 /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABFB12150CFD900FDE536 /* Configurator.swift */; };
+		4197F72F21511E0400E57EDE /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4197F72E21511E0400E57EDE /* Photo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		414ABFAA2150C91000FDE536 /* AssemblyProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssemblyProtocol.swift; sourceTree = "<group>"; };
 		414ABFAD2150C9BE00FDE536 /* ApplicationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationAssembly.swift; sourceTree = "<group>"; };
 		414ABFB12150CFD900FDE536 /* Configurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurator.swift; sourceTree = "<group>"; };
+		4197F72E21511E0400E57EDE /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				413184C92150B50000FAF80C /* User.swift */,
+				4197F72E21511E0400E57EDE /* Photo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				414ABF9B2150BC7B00FDE536 /* NetworkError.swift in Sources */,
 				414ABF952150B80B00FDE536 /* JSONPlaceholderAPI.swift in Sources */,
 				413184C42150B0A100FAF80C /* Configurable.swift in Sources */,
+				4197F72F21511E0400E57EDE /* Photo.swift in Sources */,
 				414ABFA32150C2E900FDE536 /* URLSessionConfiguration+Extensions.swift in Sources */,
 				413184BA2150AD7200FAF80C /* Reusable.swift in Sources */,
 				414ABF9D2150BD0F00FDE536 /* Provider.swift in Sources */,
