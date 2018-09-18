@@ -40,6 +40,7 @@
 		414ABFB22150CFD900FDE536 /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABFB12150CFD900FDE536 /* Configurator.swift */; };
 		4197F72F21511E0400E57EDE /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4197F72E21511E0400E57EDE /* Photo.swift */; };
 		4197F73121511F4500E57EDE /* JSONPlaceholderPhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4197F73021511F4500E57EDE /* JSONPlaceholderPhotoService.swift */; };
+		4197F73321513DEE00E57EDE /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4197F73221513DEE00E57EDE /* Album.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,7 @@
 		414ABFB12150CFD900FDE536 /* Configurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurator.swift; sourceTree = "<group>"; };
 		4197F72E21511E0400E57EDE /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		4197F73021511F4500E57EDE /* JSONPlaceholderPhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONPlaceholderPhotoService.swift; sourceTree = "<group>"; };
+		4197F73221513DEE00E57EDE /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 			children = (
 				413184C92150B50000FAF80C /* User.swift */,
 				4197F72E21511E0400E57EDE /* Photo.swift */,
+				4197F73221513DEE00E57EDE /* Album.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 			files = (
 				414ABF9B2150BC7B00FDE536 /* NetworkError.swift in Sources */,
 				414ABF952150B80B00FDE536 /* JSONPlaceholderAPI.swift in Sources */,
+				4197F73321513DEE00E57EDE /* Album.swift in Sources */,
 				413184C42150B0A100FAF80C /* Configurable.swift in Sources */,
 				4197F72F21511E0400E57EDE /* Photo.swift in Sources */,
 				414ABFA32150C2E900FDE536 /* URLSessionConfiguration+Extensions.swift in Sources */,
