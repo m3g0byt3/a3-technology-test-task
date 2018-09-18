@@ -22,8 +22,6 @@ struct Provider<T> where T: URLRepresentable {
 
     // MARK: - Public API
 
-    // TODO: Make a generic typealias instead?
-
     func performRequest<U>(_ type: T,
                            completion: @escaping (Result<U, NetworkError>) -> Void) where U: Codable {
 

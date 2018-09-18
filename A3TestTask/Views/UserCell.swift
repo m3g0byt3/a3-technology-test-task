@@ -19,6 +19,7 @@ extension UserCell: Configurable {
     @discardableResult
     func configure(with model: Model) -> Self {
         textLabel?.text = model.name
+
         return self
     }
 }

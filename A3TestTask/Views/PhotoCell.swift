@@ -40,7 +40,7 @@ final class PhotoCell: UITableViewCell {
         photoImageView.layer.cornerRadius = cornerRadius
         photoImageView.clipsToBounds = true
 
-        // TODO: Set `shadowPath` after first layout cycle
+        // TODO: Set `shadowPath` after first layout cycle for better performance
         photoImageContainerView.layer.masksToBounds = false
         photoImageContainerView.layer.cornerRadius = cornerRadius
         photoImageContainerView.layer.shadowColor = Constants.Interface.shadowColor
