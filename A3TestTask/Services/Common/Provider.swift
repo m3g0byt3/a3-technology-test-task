@@ -61,9 +61,8 @@ struct Provider<T> where T: URLRepresentable {
             // Successfully receive data from the backend
             case (.some(let data), _, _):
                 do {
-                    // TODO: Use separate mapper instead of hardcoded `JSONDecoder`
-                    let decoder = JSONDecoder()
-                    let mapped = try decoder.decode(U.self, from: data)
+                    // TODO: Use injectable mapper instead of `JSONDecoder`
+                    let mapped = try JSONDecoder().decode(U.self, from: data)
                     DispatchQueue.main.async {
                         completion(.success(mapped))
                     }
