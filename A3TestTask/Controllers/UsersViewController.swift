@@ -86,6 +86,10 @@ extension UsersViewController: UITableViewDataSource {
 extension UsersViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let user = users[indexPath.row]
+        let scene = configurator.getScene(.photos(user: user))
+
         tableView.deselectRow(at: indexPath, animated: true)
+        navigationController?.pushViewController(scene.presentableEntity, animated: true)
     }
 }
