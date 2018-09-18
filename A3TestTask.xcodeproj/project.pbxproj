@@ -30,6 +30,8 @@
 		414ABF992150BC3A00FDE536 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABF982150BC3A00FDE536 /* Result.swift */; };
 		414ABF9B2150BC7B00FDE536 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABF9A2150BC7B00FDE536 /* NetworkError.swift */; };
 		414ABF9D2150BD0F00FDE536 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABF9C2150BD0F00FDE536 /* Provider.swift */; };
+		414ABF9F2150BFFF00FDE536 /* UserServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABF9E2150BFFF00FDE536 /* UserServiceProtocol.swift */; };
+		414ABFA12150C10600FDE536 /* JSONPlaceholderUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABFA02150C10600FDE536 /* JSONPlaceholderUserService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		414ABF982150BC3A00FDE536 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		414ABF9A2150BC7B00FDE536 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		414ABF9C2150BD0F00FDE536 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		414ABF9E2150BFFF00FDE536 /* UserServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServiceProtocol.swift; sourceTree = "<group>"; };
+		414ABFA02150C10600FDE536 /* JSONPlaceholderUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONPlaceholderUserService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +163,7 @@
 				413184C32150B0A100FAF80C /* Configurable.swift */,
 				414ABF8F2150B74700FDE536 /* APIProtocol.swift */,
 				414ABF962150BB3200FDE536 /* URLRepresentable.swift */,
+				414ABF9E2150BFFF00FDE536 /* UserServiceProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -176,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				414ABF942150B80B00FDE536 /* JSONPlaceholderAPI.swift */,
+				414ABFA02150C10600FDE536 /* JSONPlaceholderUserService.swift */,
 			);
 			path = JSONPlaceholder;
 			sourceTree = "<group>";
@@ -301,8 +307,10 @@
 				413184C82150B20600FAF80C /* NIBRepresentable.swift in Sources */,
 				413184CA2150B50000FAF80C /* User.swift in Sources */,
 				413184BC2150AD8B00FAF80C /* UITableViewCell+Extensions.swift in Sources */,
+				414ABFA12150C10600FDE536 /* JSONPlaceholderUserService.swift in Sources */,
 				413184AC2150A87100FAF80C /* UsersViewController.swift in Sources */,
 				413184B32150A8C300FAF80C /* Constants.swift in Sources */,
+				414ABF9F2150BFFF00FDE536 /* UserServiceProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
