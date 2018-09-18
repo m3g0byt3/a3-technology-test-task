@@ -23,6 +23,7 @@
 		413184C22150B07100FAF80C /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 413184C02150B07100FAF80C /* UserCell.xib */; };
 		413184C42150B0A100FAF80C /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413184C32150B0A100FAF80C /* Configurable.swift */; };
 		413184C82150B20600FAF80C /* NIBRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413184C72150B20600FAF80C /* NIBRepresentable.swift */; };
+		413184CA2150B50000FAF80C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413184C92150B50000FAF80C /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		413184C02150B07100FAF80C /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
 		413184C32150B0A100FAF80C /* Configurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
 		413184C72150B20600FAF80C /* NIBRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NIBRepresentable.swift; sourceTree = "<group>"; };
+		413184C92150B50000FAF80C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 		413184A42150A80400FAF80C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				413184C92150B50000FAF80C /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				413184BE2150ADF600FAF80C /* UITableView+Extensions.swift in Sources */,
 				413184B62150A93E00FAF80C /* UIViewController+Extensions.swift in Sources */,
 				413184C82150B20600FAF80C /* NIBRepresentable.swift in Sources */,
+				413184CA2150B50000FAF80C /* User.swift in Sources */,
 				413184BC2150AD8B00FAF80C /* UITableViewCell+Extensions.swift in Sources */,
 				413184AC2150A87100FAF80C /* UsersViewController.swift in Sources */,
 				413184B32150A8C300FAF80C /* Constants.swift in Sources */,
