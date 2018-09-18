@@ -19,6 +19,7 @@
 		413184BA2150AD7200FAF80C /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413184B92150AD7200FAF80C /* Reusable.swift */; };
 		413184BC2150AD8B00FAF80C /* UITableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413184BB2150AD8B00FAF80C /* UITableViewCell+Extensions.swift */; };
 		413184BE2150ADF600FAF80C /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413184BD2150ADF600FAF80C /* UITableView+Extensions.swift */; };
+		413184C42150B0A100FAF80C /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413184C32150B0A100FAF80C /* Configurable.swift */; };
 		413184C82150B20600FAF80C /* NIBRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413184C72150B20600FAF80C /* NIBRepresentable.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		413184B92150AD7200FAF80C /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		413184BB2150AD8B00FAF80C /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
 		413184BD2150ADF600FAF80C /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		413184C32150B0A100FAF80C /* Configurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
 		413184C72150B20600FAF80C /* NIBRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NIBRepresentable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,6 +134,7 @@
 			children = (
 				413184B92150AD7200FAF80C /* Reusable.swift */,
 				413184C72150B20600FAF80C /* NIBRepresentable.swift */,
+				413184C32150B0A100FAF80C /* Configurable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				413184C42150B0A100FAF80C /* Configurable.swift in Sources */,
 				413184BA2150AD7200FAF80C /* Reusable.swift in Sources */,
 				413184B02150A87F00FAF80C /* PhotosViewController.swift in Sources */,
 				4131848D2150A75800FAF80C /* AppDelegate.swift in Sources */,
