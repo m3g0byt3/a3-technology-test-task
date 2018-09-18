@@ -45,6 +45,7 @@
 		4197F7392151427200E57EDE /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4197F7372151427200E57EDE /* PhotoCell.xib */; };
 		4197F73B2151462900E57EDE /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4197F73A2151462900E57EDE /* UIImageView+Extensions.swift */; };
 		4197F73D215173FC00E57EDE /* AbstractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4197F73C215173FC00E57EDE /* AbstractViewController.swift */; };
+		41B90A052151798300E4315D /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B90A042151798300E4315D /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +89,7 @@
 		4197F7372151427200E57EDE /* PhotoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCell.xib; sourceTree = "<group>"; };
 		4197F73A2151462900E57EDE /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		4197F73C215173FC00E57EDE /* AbstractViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractViewController.swift; sourceTree = "<group>"; };
+		41B90A042151798300E4315D /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +232,7 @@
 				414ABF982150BC3A00FDE536 /* Result.swift */,
 				414ABF9A2150BC7B00FDE536 /* NetworkError.swift */,
 				414ABF9C2150BD0F00FDE536 /* Provider.swift */,
+				41B90A042151798300E4315D /* Reachability.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 				413184BC2150AD8B00FAF80C /* UITableViewCell+Extensions.swift in Sources */,
 				414ABFA12150C10600FDE536 /* JSONPlaceholderUserService.swift in Sources */,
 				413184AC2150A87100FAF80C /* UsersViewController.swift in Sources */,
+				41B90A052151798300E4315D /* Reachability.swift in Sources */,
 				413184B32150A8C300FAF80C /* Constants.swift in Sources */,
 				414ABFAB2150C91000FDE536 /* AssemblyProtocol.swift in Sources */,
 				414ABF9F2150BFFF00FDE536 /* UserServiceProtocol.swift in Sources */,

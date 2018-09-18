@@ -24,8 +24,13 @@ struct Provider<T> where T: URLRepresentable {
 
     func performRequest<U>(_ type: T,
                            completion: @escaping (Result<U, NetworkError>) -> Void) where U: Codable {
-
-        // TODO: Add Reachability checks
+        // Early exit if no internet connection available
+        guard Reachability.isConnectedToNetwork() else {
+            DispatchQueue.main.async {
+                completion(.failure(.connection))
+            }
+            return
+        }
 
         // Early exit if we are unable to extract URL
         guard let url = type.url else {
