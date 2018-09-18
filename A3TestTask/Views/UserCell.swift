@@ -14,11 +14,11 @@ final class UserCell: UITableViewCell {}
 
 extension UserCell: Configurable {
 
-    typealias Model = String
+    typealias Model = User
 
     @discardableResult
     func configure(with model: Model) -> Self {
-        textLabel?.text = model
+        textLabel?.text = model.name
         return self
     }
 }
