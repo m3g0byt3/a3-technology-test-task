@@ -24,6 +24,9 @@ final class UsersViewController: UIViewController {
     // swiftlint:disable:next implicitly_unwrapped_optional
     var userService: UserServiceProtocol!
 
+    // swiftlint:disable:next implicitly_unwrapped_optional
+    var configurator: Configurator<ApplicationAssembly>!
+
     // MARK: - Lifecycle
 
     override func viewDidLoad() {
