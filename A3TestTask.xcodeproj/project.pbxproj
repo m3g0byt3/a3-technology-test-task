@@ -32,6 +32,7 @@
 		414ABF9D2150BD0F00FDE536 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABF9C2150BD0F00FDE536 /* Provider.swift */; };
 		414ABF9F2150BFFF00FDE536 /* UserServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABF9E2150BFFF00FDE536 /* UserServiceProtocol.swift */; };
 		414ABFA12150C10600FDE536 /* JSONPlaceholderUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABFA02150C10600FDE536 /* JSONPlaceholderUserService.swift */; };
+		414ABFA32150C2E900FDE536 /* URLSessionConfiguration+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABFA22150C2E900FDE536 /* URLSessionConfiguration+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		414ABF9C2150BD0F00FDE536 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
 		414ABF9E2150BFFF00FDE536 /* UserServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServiceProtocol.swift; sourceTree = "<group>"; };
 		414ABFA02150C10600FDE536 /* JSONPlaceholderUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONPlaceholderUserService.swift; sourceTree = "<group>"; };
+		414ABFA22150C2E900FDE536 /* URLSessionConfiguration+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSessionConfiguration+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 				413184B52150A93E00FAF80C /* UIViewController+Extensions.swift */,
 				413184BD2150ADF600FAF80C /* UITableView+Extensions.swift */,
 				413184BB2150AD8B00FAF80C /* UITableViewCell+Extensions.swift */,
+				414ABFA22150C2E900FDE536 /* URLSessionConfiguration+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				414ABF9B2150BC7B00FDE536 /* NetworkError.swift in Sources */,
 				414ABF952150B80B00FDE536 /* JSONPlaceholderAPI.swift in Sources */,
 				413184C42150B0A100FAF80C /* Configurable.swift in Sources */,
+				414ABFA32150C2E900FDE536 /* URLSessionConfiguration+Extensions.swift in Sources */,
 				413184BA2150AD7200FAF80C /* Reusable.swift in Sources */,
 				414ABF9D2150BD0F00FDE536 /* Provider.swift in Sources */,
 				413184C12150B07100FAF80C /* UserCell.swift in Sources */,
