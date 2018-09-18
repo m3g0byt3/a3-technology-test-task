@@ -37,6 +37,7 @@
 		414ABFA92150C84F00FDE536 /* PhotosServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABFA82150C84F00FDE536 /* PhotosServiceProtocol.swift */; };
 		414ABFAB2150C91000FDE536 /* AssemblyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABFAA2150C91000FDE536 /* AssemblyProtocol.swift */; };
 		414ABFAE2150C9BE00FDE536 /* ApplicationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABFAD2150C9BE00FDE536 /* ApplicationAssembly.swift */; };
+		414ABFB22150CFD900FDE536 /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABFB12150CFD900FDE536 /* Configurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		414ABFA82150C84F00FDE536 /* PhotosServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosServiceProtocol.swift; sourceTree = "<group>"; };
 		414ABFAA2150C91000FDE536 /* AssemblyProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssemblyProtocol.swift; sourceTree = "<group>"; };
 		414ABFAD2150C9BE00FDE536 /* ApplicationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationAssembly.swift; sourceTree = "<group>"; };
+		414ABFB12150CFD900FDE536 /* Configurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				414ABFAD2150C9BE00FDE536 /* ApplicationAssembly.swift */,
+				414ABFB12150CFD900FDE536 /* Configurator.swift */,
 			);
 			path = "Dependency Injection";
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				413184B62150A93E00FAF80C /* UIViewController+Extensions.swift in Sources */,
 				414ABFAE2150C9BE00FDE536 /* ApplicationAssembly.swift in Sources */,
 				413184C82150B20600FAF80C /* NIBRepresentable.swift in Sources */,
+				414ABFB22150CFD900FDE536 /* Configurator.swift in Sources */,
 				413184CA2150B50000FAF80C /* User.swift in Sources */,
 				413184BC2150AD8B00FAF80C /* UITableViewCell+Extensions.swift in Sources */,
 				414ABFA12150C10600FDE536 /* JSONPlaceholderUserService.swift in Sources */,
