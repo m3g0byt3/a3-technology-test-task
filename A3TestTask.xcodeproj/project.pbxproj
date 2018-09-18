@@ -28,6 +28,7 @@
 		414ABF952150B80B00FDE536 /* JSONPlaceholderAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABF942150B80B00FDE536 /* JSONPlaceholderAPI.swift */; };
 		414ABF972150BB3200FDE536 /* URLRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABF962150BB3200FDE536 /* URLRepresentable.swift */; };
 		414ABF992150BC3A00FDE536 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABF982150BC3A00FDE536 /* Result.swift */; };
+		414ABF9B2150BC7B00FDE536 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABF9A2150BC7B00FDE536 /* NetworkError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		414ABF942150B80B00FDE536 /* JSONPlaceholderAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONPlaceholderAPI.swift; sourceTree = "<group>"; };
 		414ABF962150BB3200FDE536 /* URLRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRepresentable.swift; sourceTree = "<group>"; };
 		414ABF982150BC3A00FDE536 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		414ABF9A2150BC7B00FDE536 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				414ABF982150BC3A00FDE536 /* Result.swift */,
+				414ABF9A2150BC7B00FDE536 /* NetworkError.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				414ABF9B2150BC7B00FDE536 /* NetworkError.swift in Sources */,
 				414ABF952150B80B00FDE536 /* JSONPlaceholderAPI.swift in Sources */,
 				413184C42150B0A100FAF80C /* Configurable.swift in Sources */,
 				413184BA2150AD7200FAF80C /* Reusable.swift in Sources */,
