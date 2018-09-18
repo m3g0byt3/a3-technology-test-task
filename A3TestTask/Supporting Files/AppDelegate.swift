@@ -15,6 +15,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: - Properties
 
     var window: UIWindow?
+    var configurator: Configurator<ApplicationAssembly>?
 
     // MARK: - UIApplicationDelegate protocol conformance
 
@@ -27,12 +28,13 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 
     // MARK: - Private API
 
-    // TODO: Inject dependencies using DI assembly or service locator
     private func injectDependencies() {
-        let listViewController = ListViewController.fromNib()
-
+        configurator = Configurator<ApplicationAssembly>()
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = UINavigationController(rootViewController: listViewController)
+
+        let scene = configurator?.getScene(.users(configurator: configurator))
+
+        window?.rootViewController = scene?.presentableEntity
         window?.makeKeyAndVisible()
     }
 }

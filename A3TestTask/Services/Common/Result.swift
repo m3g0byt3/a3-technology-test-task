@@ -1,5 +1,5 @@
 //
-//  ListViewController.swift
+//  Result.swift
 //  A3TestTask
 //
 //  Created by m3g0byt3 on 18/09/2018.
@@ -7,6 +7,9 @@
 //
 
 import Foundation
-import UIKit
 
-final class ListViewController: UIViewController {}
+enum Result<T, E> where E: Error {
+
+    case success(T)
+    case failure(E)
+}
