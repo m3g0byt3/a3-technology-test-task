@@ -10,5 +10,7 @@ import Foundation
 
 struct Album: Codable {
 
+    // MARK: - Public roperties
+
     let photos: [Photo]
 }

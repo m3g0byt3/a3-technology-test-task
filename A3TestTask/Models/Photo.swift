@@ -10,6 +10,8 @@ import Foundation
 
 struct Photo: Codable {
 
+    // MARK: - Public roperties
+
     let url: URL
     let thumbnailUrl: URL
     let title: String
