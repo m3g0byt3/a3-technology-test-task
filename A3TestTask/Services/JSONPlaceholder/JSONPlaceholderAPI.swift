@@ -52,3 +52,7 @@ extension JSONPlaceholderAPI: APIProtocol {
         }
     }
 }
+
+// MARK: - URLRepresentable protocol conformance
+
+extension JSONPlaceholderAPI: URLRepresentable {}

@@ -26,6 +26,7 @@
 		413184CA2150B50000FAF80C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413184C92150B50000FAF80C /* User.swift */; };
 		414ABF902150B74700FDE536 /* APIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABF8F2150B74700FDE536 /* APIProtocol.swift */; };
 		414ABF952150B80B00FDE536 /* JSONPlaceholderAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABF942150B80B00FDE536 /* JSONPlaceholderAPI.swift */; };
+		414ABF972150BB3200FDE536 /* URLRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABF962150BB3200FDE536 /* URLRepresentable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		413184C92150B50000FAF80C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		414ABF8F2150B74700FDE536 /* APIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProtocol.swift; sourceTree = "<group>"; };
 		414ABF942150B80B00FDE536 /* JSONPlaceholderAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONPlaceholderAPI.swift; sourceTree = "<group>"; };
+		414ABF962150BB3200FDE536 /* URLRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRepresentable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 				413184C72150B20600FAF80C /* NIBRepresentable.swift */,
 				413184C32150B0A100FAF80C /* Configurable.swift */,
 				414ABF8F2150B74700FDE536 /* APIProtocol.swift */,
+				414ABF962150BB3200FDE536 /* URLRepresentable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				413184BA2150AD7200FAF80C /* Reusable.swift in Sources */,
 				413184C12150B07100FAF80C /* UserCell.swift in Sources */,
 				414ABF902150B74700FDE536 /* APIProtocol.swift in Sources */,
+				414ABF972150BB3200FDE536 /* URLRepresentable.swift in Sources */,
 				413184B02150A87F00FAF80C /* PhotosViewController.swift in Sources */,
 				4131848D2150A75800FAF80C /* AppDelegate.swift in Sources */,
 				413184BE2150ADF600FAF80C /* UITableView+Extensions.swift in Sources */,
