@@ -29,6 +29,7 @@
 		414ABF972150BB3200FDE536 /* URLRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABF962150BB3200FDE536 /* URLRepresentable.swift */; };
 		414ABF992150BC3A00FDE536 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABF982150BC3A00FDE536 /* Result.swift */; };
 		414ABF9B2150BC7B00FDE536 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABF9A2150BC7B00FDE536 /* NetworkError.swift */; };
+		414ABF9D2150BD0F00FDE536 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABF9C2150BD0F00FDE536 /* Provider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		414ABF962150BB3200FDE536 /* URLRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRepresentable.swift; sourceTree = "<group>"; };
 		414ABF982150BC3A00FDE536 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		414ABF9A2150BC7B00FDE536 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		414ABF9C2150BD0F00FDE536 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 			children = (
 				414ABF982150BC3A00FDE536 /* Result.swift */,
 				414ABF9A2150BC7B00FDE536 /* NetworkError.swift */,
+				414ABF9C2150BD0F00FDE536 /* Provider.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				414ABF952150B80B00FDE536 /* JSONPlaceholderAPI.swift in Sources */,
 				413184C42150B0A100FAF80C /* Configurable.swift in Sources */,
 				413184BA2150AD7200FAF80C /* Reusable.swift in Sources */,
+				414ABF9D2150BD0F00FDE536 /* Provider.swift in Sources */,
 				413184C12150B07100FAF80C /* UserCell.swift in Sources */,
 				414ABF902150B74700FDE536 /* APIProtocol.swift in Sources */,
 				414ABF972150BB3200FDE536 /* URLRepresentable.swift in Sources */,

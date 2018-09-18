@@ -17,5 +17,6 @@ enum Constants {
 
     enum Network {
         static let pageAlbumLimit = 1
+        static var successStatusCodeRange = 200..<300
     }
 }
