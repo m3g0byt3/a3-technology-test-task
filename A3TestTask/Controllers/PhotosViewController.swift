@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-final class PhotosViewController: UIViewController {
+final class PhotosViewController: AbstractViewController {
 
     // MARK: - IBOutlets and UI
 
@@ -37,14 +37,24 @@ final class PhotosViewController: UIViewController {
         fetchData(for: currentPage)
     }
 
-    // MARK: - Private API
+    // MARK: - Public API
 
-    private func setupUI() {
+    override func setupUI() {
+        super.setupUI()
         tableView.tableFooterView = UIView()
         tableView.register(PhotoCell.self)
         tableView.estimatedRowHeight = view.frame.width
         tableView.rowHeight = UITableView.automaticDimension
     }
+
+    override func showActivityIndicator(_ show: Bool) {
+        super.showActivityIndicator(show)
+        if !show {
+            tableView.flashScrollIndicators()
+        }
+    }
+
+    // MARK: - Private API
 
     private func fetchData(for page: Int) {
         showActivityIndicator(true)
@@ -55,9 +65,7 @@ final class PhotosViewController: UIViewController {
                 self?.photos.append(contentsOf: photos)
                 self?.tableView.reloadData()
             case .failure(let error):
-                let title = Constants.Strings.errorTitle
-                let message = Constants.Strings.errorMessage + error.localizedDescription
-                self?.presentAlert(title: title, message: message)
+                self?.handleError(error)
             }
         }
     }
@@ -74,13 +82,6 @@ final class PhotosViewController: UIViewController {
 
         currentFetchRequest = workItem
         DispatchQueue.main.asyncAfter(deadline: deadline, execute: workItem)
-    }
-
-    private func showActivityIndicator(_ show: Bool) {
-        UIApplication.shared.isNetworkActivityIndicatorVisible = show
-        if !show {
-            tableView.flashScrollIndicators()
-        }
     }
 }
 

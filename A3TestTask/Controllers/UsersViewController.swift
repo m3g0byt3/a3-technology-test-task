@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-final class UsersViewController: UIViewController {
+final class UsersViewController: AbstractViewController {
 
     // MARK: - IBOutlets and UI
 
@@ -35,20 +35,20 @@ final class UsersViewController: UIViewController {
         fetchData()
     }
 
-    // MARK: - Private API
+    // MARK: - Public API
 
-    private func setupUI() {
+    override func setupUI() {
+        super.setupUI()
         tableView.register(UserCell.self)
         tableView.tableFooterView = UIView()
-        if #available(iOS 11, *) {
-            navigationController?.navigationBar.prefersLargeTitles = true
-        }
     }
 
+    // MARK: - Private API
+
     private func fetchData() {
-        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+        showActivityIndicator(true)
         userService.getUsers { [weak self] result in
-            defer { UIApplication.shared.isNetworkActivityIndicatorVisible = false }
+            self?.showActivityIndicator(false)
             switch result {
 
             case .success(let users):
@@ -56,9 +56,7 @@ final class UsersViewController: UIViewController {
                 self?.tableView.reloadData()
 
             case .failure(let error):
-                let title = Constants.Strings.errorTitle
-                let message = Constants.Strings.errorMessage + error.localizedDescription
-                self?.presentAlert(title: title, message: message)
+                self?.handleError(error)
             }
         }
     }
