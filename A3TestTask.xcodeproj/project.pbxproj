@@ -24,6 +24,8 @@
 		413184C42150B0A100FAF80C /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413184C32150B0A100FAF80C /* Configurable.swift */; };
 		413184C82150B20600FAF80C /* NIBRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413184C72150B20600FAF80C /* NIBRepresentable.swift */; };
 		413184CA2150B50000FAF80C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413184C92150B50000FAF80C /* User.swift */; };
+		414ABF902150B74700FDE536 /* APIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABF8F2150B74700FDE536 /* APIProtocol.swift */; };
+		414ABF952150B80B00FDE536 /* JSONPlaceholderAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABF942150B80B00FDE536 /* JSONPlaceholderAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		413184C32150B0A100FAF80C /* Configurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
 		413184C72150B20600FAF80C /* NIBRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NIBRepresentable.swift; sourceTree = "<group>"; };
 		413184C92150B50000FAF80C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		414ABF8F2150B74700FDE536 /* APIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProtocol.swift; sourceTree = "<group>"; };
+		414ABF942150B80B00FDE536 /* JSONPlaceholderAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONPlaceholderAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 				413184A32150A7FF00FAF80C /* Views */,
 				413184A42150A80400FAF80C /* Models */,
 				413184A52150A80A00FAF80C /* Controllers */,
+				414ABF912150B7DB00FDE536 /* Services */,
 				413184B82150AD6100FAF80C /* Protocols */,
 				413184B42150A92D00FAF80C /* Extensions */,
 				4131849E2150A78A00FAF80C /* Supporting Files */,
@@ -144,8 +149,33 @@
 				413184B92150AD7200FAF80C /* Reusable.swift */,
 				413184C72150B20600FAF80C /* NIBRepresentable.swift */,
 				413184C32150B0A100FAF80C /* Configurable.swift */,
+				414ABF8F2150B74700FDE536 /* APIProtocol.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		414ABF912150B7DB00FDE536 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				414ABF922150B7E900FDE536 /* JSONPlaceholder */,
+				414ABF932150B7FB00FDE536 /* Common */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		414ABF922150B7E900FDE536 /* JSONPlaceholder */ = {
+			isa = PBXGroup;
+			children = (
+				414ABF942150B80B00FDE536 /* JSONPlaceholderAPI.swift */,
+			);
+			path = JSONPlaceholder;
+			sourceTree = "<group>";
+		};
+		414ABF932150B7FB00FDE536 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,9 +273,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				414ABF952150B80B00FDE536 /* JSONPlaceholderAPI.swift in Sources */,
 				413184C42150B0A100FAF80C /* Configurable.swift in Sources */,
 				413184BA2150AD7200FAF80C /* Reusable.swift in Sources */,
 				413184C12150B07100FAF80C /* UserCell.swift in Sources */,
+				414ABF902150B74700FDE536 /* APIProtocol.swift in Sources */,
 				413184B02150A87F00FAF80C /* PhotosViewController.swift in Sources */,
 				4131848D2150A75800FAF80C /* AppDelegate.swift in Sources */,
 				413184BE2150ADF600FAF80C /* UITableView+Extensions.swift in Sources */,

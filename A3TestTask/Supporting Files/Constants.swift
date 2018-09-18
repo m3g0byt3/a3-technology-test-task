@@ -14,4 +14,8 @@ enum Constants {
         static let usersTitle = "Users"
         static let alertCloseButtonTitle = "OK"
     }
+
+    enum Network {
+        static let pageAlbumLimit = 1
+    }
 }
