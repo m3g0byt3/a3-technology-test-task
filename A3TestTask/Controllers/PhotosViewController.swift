@@ -18,6 +18,7 @@ final class PhotosViewController: UIViewController {
     // MARK: - Private properties
 
     private var photos = [Photo]()
+    private var currentPage = 0
 
     // MARK: - Public properties
 
@@ -32,7 +33,7 @@ final class PhotosViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        fetchData()
+        fetchData(for: currentPage)
     }
 
     // MARK: - Private API
@@ -44,11 +45,10 @@ final class PhotosViewController: UIViewController {
         tableView.rowHeight = UITableView.automaticDimension
     }
 
-    private func fetchData() {
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
-        // TODO: change page number in request
-        photosService.getPhotos(user: user, page: 0) { [weak self] result in
             UIApplication.shared.isNetworkActivityIndicatorVisible = false
+    private func fetchData(for page: Int) {
+        photosService.getPhotos(user: user, page: page) { [weak self] result in
             switch result {
             case .success(let photos):
                 self?.photos.append(contentsOf: photos)
