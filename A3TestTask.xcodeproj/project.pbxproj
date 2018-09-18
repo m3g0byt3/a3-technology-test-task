@@ -36,6 +36,7 @@
 		414ABFA52150C7AB00FDE536 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABFA42150C7AB00FDE536 /* Presentable.swift */; };
 		414ABFA92150C84F00FDE536 /* PhotosServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABFA82150C84F00FDE536 /* PhotosServiceProtocol.swift */; };
 		414ABFAB2150C91000FDE536 /* AssemblyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABFAA2150C91000FDE536 /* AssemblyProtocol.swift */; };
+		414ABFAE2150C9BE00FDE536 /* ApplicationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABFAD2150C9BE00FDE536 /* ApplicationAssembly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		414ABFA42150C7AB00FDE536 /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
 		414ABFA82150C84F00FDE536 /* PhotosServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosServiceProtocol.swift; sourceTree = "<group>"; };
 		414ABFAA2150C91000FDE536 /* AssemblyProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssemblyProtocol.swift; sourceTree = "<group>"; };
+		414ABFAD2150C9BE00FDE536 /* ApplicationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationAssembly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				413184A32150A7FF00FAF80C /* Views */,
 				413184A42150A80400FAF80C /* Models */,
 				413184A52150A80A00FAF80C /* Controllers */,
+				414ABFAC2150C99800FDE536 /* Dependency Injection */,
 				414ABF912150B7DB00FDE536 /* Services */,
 				413184B82150AD6100FAF80C /* Protocols */,
 				413184B42150A92D00FAF80C /* Extensions */,
@@ -206,6 +209,14 @@
 				414ABF9C2150BD0F00FDE536 /* Provider.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		414ABFAC2150C99800FDE536 /* Dependency Injection */ = {
+			isa = PBXGroup;
+			children = (
+				414ABFAD2150C9BE00FDE536 /* ApplicationAssembly.swift */,
+			);
+			path = "Dependency Injection";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,6 +330,7 @@
 				4131848D2150A75800FAF80C /* AppDelegate.swift in Sources */,
 				413184BE2150ADF600FAF80C /* UITableView+Extensions.swift in Sources */,
 				413184B62150A93E00FAF80C /* UIViewController+Extensions.swift in Sources */,
+				414ABFAE2150C9BE00FDE536 /* ApplicationAssembly.swift in Sources */,
 				413184C82150B20600FAF80C /* NIBRepresentable.swift in Sources */,
 				413184CA2150B50000FAF80C /* User.swift in Sources */,
 				413184BC2150AD8B00FAF80C /* UITableViewCell+Extensions.swift in Sources */,
