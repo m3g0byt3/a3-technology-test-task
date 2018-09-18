@@ -11,6 +11,7 @@ import Foundation
 enum Constants {
 
     enum Strings {
+        static let usersTitle = "Users"
         static let alertCloseButtonTitle = "OK"
     }
 }

@@ -31,6 +31,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     private func injectDependencies() {
         let usersViewController = UsersViewController.fromNib()
 
+        usersViewController.navigationItem.title = Constants.Strings.usersTitle
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = UINavigationController(rootViewController: usersViewController)
         window?.makeKeyAndVisible()
