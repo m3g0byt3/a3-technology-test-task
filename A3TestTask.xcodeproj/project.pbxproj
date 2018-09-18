@@ -43,6 +43,7 @@
 		4197F73321513DEE00E57EDE /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4197F73221513DEE00E57EDE /* Album.swift */; };
 		4197F7382151427200E57EDE /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4197F7362151427200E57EDE /* PhotoCell.swift */; };
 		4197F7392151427200E57EDE /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4197F7372151427200E57EDE /* PhotoCell.xib */; };
+		4197F73B2151462900E57EDE /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4197F73A2151462900E57EDE /* UIImageView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +85,7 @@
 		4197F73221513DEE00E57EDE /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		4197F7362151427200E57EDE /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		4197F7372151427200E57EDE /* PhotoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCell.xib; sourceTree = "<group>"; };
+		4197F73A2151462900E57EDE /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,7 @@
 				413184BD2150ADF600FAF80C /* UITableView+Extensions.swift */,
 				413184BB2150AD8B00FAF80C /* UITableViewCell+Extensions.swift */,
 				414ABFA22150C2E900FDE536 /* URLSessionConfiguration+Extensions.swift */,
+				4197F73A2151462900E57EDE /* UIImageView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				413184C12150B07100FAF80C /* UserCell.swift in Sources */,
 				414ABF902150B74700FDE536 /* APIProtocol.swift in Sources */,
 				414ABF972150BB3200FDE536 /* URLRepresentable.swift in Sources */,
+				4197F73B2151462900E57EDE /* UIImageView+Extensions.swift in Sources */,
 				414ABFA52150C7AB00FDE536 /* Presentable.swift in Sources */,
 				414ABF992150BC3A00FDE536 /* Result.swift in Sources */,
 				413184B02150A87F00FAF80C /* PhotosViewController.swift in Sources */,
