@@ -39,6 +39,7 @@
 		414ABFAE2150C9BE00FDE536 /* ApplicationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABFAD2150C9BE00FDE536 /* ApplicationAssembly.swift */; };
 		414ABFB22150CFD900FDE536 /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABFB12150CFD900FDE536 /* Configurator.swift */; };
 		4197F72F21511E0400E57EDE /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4197F72E21511E0400E57EDE /* Photo.swift */; };
+		4197F73121511F4500E57EDE /* JSONPlaceholderPhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4197F73021511F4500E57EDE /* JSONPlaceholderPhotoService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		414ABFAD2150C9BE00FDE536 /* ApplicationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationAssembly.swift; sourceTree = "<group>"; };
 		414ABFB12150CFD900FDE536 /* Configurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurator.swift; sourceTree = "<group>"; };
 		4197F72E21511E0400E57EDE /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		4197F73021511F4500E57EDE /* JSONPlaceholderPhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONPlaceholderPhotoService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +204,7 @@
 			children = (
 				414ABF942150B80B00FDE536 /* JSONPlaceholderAPI.swift */,
 				414ABFA02150C10600FDE536 /* JSONPlaceholderUserService.swift */,
+				4197F73021511F4500E57EDE /* JSONPlaceholderPhotoService.swift */,
 			);
 			path = JSONPlaceholder;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				413184B02150A87F00FAF80C /* PhotosViewController.swift in Sources */,
 				4131848D2150A75800FAF80C /* AppDelegate.swift in Sources */,
 				413184BE2150ADF600FAF80C /* UITableView+Extensions.swift in Sources */,
+				4197F73121511F4500E57EDE /* JSONPlaceholderPhotoService.swift in Sources */,
 				413184B62150A93E00FAF80C /* UIViewController+Extensions.swift in Sources */,
 				414ABFAE2150C9BE00FDE536 /* ApplicationAssembly.swift in Sources */,
 				413184C82150B20600FAF80C /* NIBRepresentable.swift in Sources */,
