@@ -12,4 +12,5 @@ struct Photo: Codable {
 
     let url: URL
     let thumbnailUrl: URL
+    let title: String
 }
