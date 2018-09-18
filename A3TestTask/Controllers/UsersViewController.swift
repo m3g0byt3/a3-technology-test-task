@@ -44,6 +44,9 @@ final class UsersViewController: UIViewController {
     private func setupUI() {
         tableView.register(UserCell.self)
         tableView.tableFooterView = UIView()
+        if #available(iOS 11, *) {
+            navigationController?.navigationBar.prefersLargeTitles = true
+        }
     }
 
     private func fetchData() {
