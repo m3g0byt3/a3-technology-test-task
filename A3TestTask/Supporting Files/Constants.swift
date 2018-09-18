@@ -21,7 +21,7 @@ enum Constants {
 
     enum Network {
         static let pageAlbumLimit = 1
-        static var successStatusCodeRange = 200..<300
+        static let successStatusCodeRange = 200..<300
         static let requestTimeout: TimeInterval = 15.0
         static let resourceTimeout: TimeInterval = 15.0
         static let throttleDuration: TimeInterval = 0.5
