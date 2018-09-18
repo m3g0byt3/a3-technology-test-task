@@ -15,11 +15,25 @@ final class UsersViewController: UIViewController {
 
     @IBOutlet private weak var tableView: UITableView!
 
+    // MARK: - Private properties
+
+    private var users = [User]()
+
+    // MARK: - Public properties
+
+    // swiftlint:disable:next implicitly_unwrapped_optional
+    var userService: UserServiceProtocol!
+
     // MARK: - Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        fetchData()
     }
 
     // MARK: - Private API
@@ -28,6 +42,24 @@ final class UsersViewController: UIViewController {
         tableView.register(UserCell.self)
         tableView.tableFooterView = UIView()
     }
+
+    private func fetchData() {
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+        userService.getUsers { [weak self] result in
+            defer { UIApplication.shared.isNetworkActivityIndicatorVisible = false }
+            switch result {
+
+            case .success(let users):
+                self?.users = users
+                self?.tableView.reloadData()
+
+            case .failure(let error):
+                let title = Constants.Strings.errorTitle
+                let message = Constants.Strings.errorMessage + error.localizedDescription
+                self?.presentAlert(title: title, message: message)
+            }
+        }
+    }
 }
 
 // MARK: - UITableViewDataSource protocol conformance
@@ -35,13 +67,14 @@ final class UsersViewController: UIViewController {
 extension UsersViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return users.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: UserCell = tableView.dequeueReusableCell(for: indexPath)
+        let user = users[indexPath.row]
 
-        return cell.configure(with: "Test User")
+        return cell.configure(with: user)
     }
 }
 
