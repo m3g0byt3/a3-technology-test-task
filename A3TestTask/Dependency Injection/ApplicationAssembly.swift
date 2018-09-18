@@ -15,7 +15,7 @@ enum ApplicationAssembly {
     case users(configurator: Configurator<ApplicationAssembly>?)
     case photos(user: User)
 }
- 
+
 // MARK: - AssemblyProtocol protocol conformance
 
 extension ApplicationAssembly: AssemblyProtocol {
@@ -25,7 +25,6 @@ extension ApplicationAssembly: AssemblyProtocol {
 
         case .users(let configurator):
             let viewController = UsersViewController.fromNib()
-
             guard case .users(let userService) = service else {
                 fatalError("Unable to resolve dependency ")
             }
