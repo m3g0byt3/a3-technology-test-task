@@ -34,6 +34,8 @@
 		414ABFA12150C10600FDE536 /* JSONPlaceholderUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABFA02150C10600FDE536 /* JSONPlaceholderUserService.swift */; };
 		414ABFA32150C2E900FDE536 /* URLSessionConfiguration+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABFA22150C2E900FDE536 /* URLSessionConfiguration+Extensions.swift */; };
 		414ABFA52150C7AB00FDE536 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABFA42150C7AB00FDE536 /* Presentable.swift */; };
+		414ABFA92150C84F00FDE536 /* PhotosServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABFA82150C84F00FDE536 /* PhotosServiceProtocol.swift */; };
+		414ABFAB2150C91000FDE536 /* AssemblyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABFAA2150C91000FDE536 /* AssemblyProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +68,8 @@
 		414ABFA02150C10600FDE536 /* JSONPlaceholderUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONPlaceholderUserService.swift; sourceTree = "<group>"; };
 		414ABFA22150C2E900FDE536 /* URLSessionConfiguration+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSessionConfiguration+Extensions.swift"; sourceTree = "<group>"; };
 		414ABFA42150C7AB00FDE536 /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		414ABFA82150C84F00FDE536 /* PhotosServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosServiceProtocol.swift; sourceTree = "<group>"; };
+		414ABFAA2150C91000FDE536 /* AssemblyProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssemblyProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,7 +173,9 @@
 				414ABF8F2150B74700FDE536 /* APIProtocol.swift */,
 				414ABF962150BB3200FDE536 /* URLRepresentable.swift */,
 				414ABF9E2150BFFF00FDE536 /* UserServiceProtocol.swift */,
+				414ABFA82150C84F00FDE536 /* PhotosServiceProtocol.swift */,
 				414ABFA42150C7AB00FDE536 /* Presentable.swift */,
+				414ABFAA2150C91000FDE536 /* AssemblyProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -303,6 +309,7 @@
 				414ABFA32150C2E900FDE536 /* URLSessionConfiguration+Extensions.swift in Sources */,
 				413184BA2150AD7200FAF80C /* Reusable.swift in Sources */,
 				414ABF9D2150BD0F00FDE536 /* Provider.swift in Sources */,
+				414ABFA92150C84F00FDE536 /* PhotosServiceProtocol.swift in Sources */,
 				413184C12150B07100FAF80C /* UserCell.swift in Sources */,
 				414ABF902150B74700FDE536 /* APIProtocol.swift in Sources */,
 				414ABF972150BB3200FDE536 /* URLRepresentable.swift in Sources */,
@@ -318,6 +325,7 @@
 				414ABFA12150C10600FDE536 /* JSONPlaceholderUserService.swift in Sources */,
 				413184AC2150A87100FAF80C /* UsersViewController.swift in Sources */,
 				413184B32150A8C300FAF80C /* Constants.swift in Sources */,
+				414ABFAB2150C91000FDE536 /* AssemblyProtocol.swift in Sources */,
 				414ABF9F2150BFFF00FDE536 /* UserServiceProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
