@@ -13,5 +13,14 @@ enum Constants {
     enum Strings {
         static let usersTitle = "Users"
         static let alertCloseButtonTitle = "OK"
+        static let errorTitle = "Error"
+        static let errorMessage = "An error has occurred:\n"
+    }
+
+    enum Network {
+        static let pageAlbumLimit = 1
+        static var successStatusCodeRange = 200..<300
+        static let requestTimeout: TimeInterval = 15.0
+        static let resourceTimeout: TimeInterval = 15.0
     }
 }

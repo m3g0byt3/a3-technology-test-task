@@ -23,6 +23,16 @@
 		413184C22150B07100FAF80C /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 413184C02150B07100FAF80C /* UserCell.xib */; };
 		413184C42150B0A100FAF80C /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413184C32150B0A100FAF80C /* Configurable.swift */; };
 		413184C82150B20600FAF80C /* NIBRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413184C72150B20600FAF80C /* NIBRepresentable.swift */; };
+		413184CA2150B50000FAF80C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413184C92150B50000FAF80C /* User.swift */; };
+		414ABF902150B74700FDE536 /* APIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABF8F2150B74700FDE536 /* APIProtocol.swift */; };
+		414ABF952150B80B00FDE536 /* JSONPlaceholderAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABF942150B80B00FDE536 /* JSONPlaceholderAPI.swift */; };
+		414ABF972150BB3200FDE536 /* URLRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABF962150BB3200FDE536 /* URLRepresentable.swift */; };
+		414ABF992150BC3A00FDE536 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABF982150BC3A00FDE536 /* Result.swift */; };
+		414ABF9B2150BC7B00FDE536 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABF9A2150BC7B00FDE536 /* NetworkError.swift */; };
+		414ABF9D2150BD0F00FDE536 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABF9C2150BD0F00FDE536 /* Provider.swift */; };
+		414ABF9F2150BFFF00FDE536 /* UserServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABF9E2150BFFF00FDE536 /* UserServiceProtocol.swift */; };
+		414ABFA12150C10600FDE536 /* JSONPlaceholderUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABFA02150C10600FDE536 /* JSONPlaceholderUserService.swift */; };
+		414ABFA32150C2E900FDE536 /* URLSessionConfiguration+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABFA22150C2E900FDE536 /* URLSessionConfiguration+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +54,16 @@
 		413184C02150B07100FAF80C /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
 		413184C32150B0A100FAF80C /* Configurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
 		413184C72150B20600FAF80C /* NIBRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NIBRepresentable.swift; sourceTree = "<group>"; };
+		413184C92150B50000FAF80C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		414ABF8F2150B74700FDE536 /* APIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProtocol.swift; sourceTree = "<group>"; };
+		414ABF942150B80B00FDE536 /* JSONPlaceholderAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONPlaceholderAPI.swift; sourceTree = "<group>"; };
+		414ABF962150BB3200FDE536 /* URLRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRepresentable.swift; sourceTree = "<group>"; };
+		414ABF982150BC3A00FDE536 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		414ABF9A2150BC7B00FDE536 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		414ABF9C2150BD0F00FDE536 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		414ABF9E2150BFFF00FDE536 /* UserServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServiceProtocol.swift; sourceTree = "<group>"; };
+		414ABFA02150C10600FDE536 /* JSONPlaceholderUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONPlaceholderUserService.swift; sourceTree = "<group>"; };
+		414ABFA22150C2E900FDE536 /* URLSessionConfiguration+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSessionConfiguration+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +99,7 @@
 				413184A32150A7FF00FAF80C /* Views */,
 				413184A42150A80400FAF80C /* Models */,
 				413184A52150A80A00FAF80C /* Controllers */,
+				414ABF912150B7DB00FDE536 /* Services */,
 				413184B82150AD6100FAF80C /* Protocols */,
 				413184B42150A92D00FAF80C /* Extensions */,
 				4131849E2150A78A00FAF80C /* Supporting Files */,
@@ -110,6 +131,7 @@
 		413184A42150A80400FAF80C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				413184C92150B50000FAF80C /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -131,6 +153,7 @@
 				413184B52150A93E00FAF80C /* UIViewController+Extensions.swift */,
 				413184BD2150ADF600FAF80C /* UITableView+Extensions.swift */,
 				413184BB2150AD8B00FAF80C /* UITableViewCell+Extensions.swift */,
+				414ABFA22150C2E900FDE536 /* URLSessionConfiguration+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -141,8 +164,39 @@
 				413184B92150AD7200FAF80C /* Reusable.swift */,
 				413184C72150B20600FAF80C /* NIBRepresentable.swift */,
 				413184C32150B0A100FAF80C /* Configurable.swift */,
+				414ABF8F2150B74700FDE536 /* APIProtocol.swift */,
+				414ABF962150BB3200FDE536 /* URLRepresentable.swift */,
+				414ABF9E2150BFFF00FDE536 /* UserServiceProtocol.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		414ABF912150B7DB00FDE536 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				414ABF922150B7E900FDE536 /* JSONPlaceholder */,
+				414ABF932150B7FB00FDE536 /* Common */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		414ABF922150B7E900FDE536 /* JSONPlaceholder */ = {
+			isa = PBXGroup;
+			children = (
+				414ABF942150B80B00FDE536 /* JSONPlaceholderAPI.swift */,
+				414ABFA02150C10600FDE536 /* JSONPlaceholderUserService.swift */,
+			);
+			path = JSONPlaceholder;
+			sourceTree = "<group>";
+		};
+		414ABF932150B7FB00FDE536 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				414ABF982150BC3A00FDE536 /* Result.swift */,
+				414ABF9A2150BC7B00FDE536 /* NetworkError.swift */,
+				414ABF9C2150BD0F00FDE536 /* Provider.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,17 +294,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				414ABF9B2150BC7B00FDE536 /* NetworkError.swift in Sources */,
+				414ABF952150B80B00FDE536 /* JSONPlaceholderAPI.swift in Sources */,
 				413184C42150B0A100FAF80C /* Configurable.swift in Sources */,
+				414ABFA32150C2E900FDE536 /* URLSessionConfiguration+Extensions.swift in Sources */,
 				413184BA2150AD7200FAF80C /* Reusable.swift in Sources */,
+				414ABF9D2150BD0F00FDE536 /* Provider.swift in Sources */,
 				413184C12150B07100FAF80C /* UserCell.swift in Sources */,
+				414ABF902150B74700FDE536 /* APIProtocol.swift in Sources */,
+				414ABF972150BB3200FDE536 /* URLRepresentable.swift in Sources */,
+				414ABF992150BC3A00FDE536 /* Result.swift in Sources */,
 				413184B02150A87F00FAF80C /* PhotosViewController.swift in Sources */,
 				4131848D2150A75800FAF80C /* AppDelegate.swift in Sources */,
 				413184BE2150ADF600FAF80C /* UITableView+Extensions.swift in Sources */,
 				413184B62150A93E00FAF80C /* UIViewController+Extensions.swift in Sources */,
 				413184C82150B20600FAF80C /* NIBRepresentable.swift in Sources */,
+				413184CA2150B50000FAF80C /* User.swift in Sources */,
 				413184BC2150AD8B00FAF80C /* UITableViewCell+Extensions.swift in Sources */,
+				414ABFA12150C10600FDE536 /* JSONPlaceholderUserService.swift in Sources */,
 				413184AC2150A87100FAF80C /* UsersViewController.swift in Sources */,
 				413184B32150A8C300FAF80C /* Constants.swift in Sources */,
+				414ABF9F2150BFFF00FDE536 /* UserServiceProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

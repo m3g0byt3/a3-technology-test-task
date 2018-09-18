@@ -30,8 +30,12 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     // TODO: Inject dependencies using DI assembly or service locator
     private func injectDependencies() {
         let usersViewController = UsersViewController.fromNib()
+        let userProvider = Provider<JSONPlaceholderAPI>(configuration: .shortTimeouts)
+        let userService = JSONPlaceholderUserService(provider: userProvider)
 
         usersViewController.navigationItem.title = Constants.Strings.usersTitle
+        usersViewController.userService = userService
+
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = UINavigationController(rootViewController: usersViewController)
         window?.makeKeyAndVisible()
