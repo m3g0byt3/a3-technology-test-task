@@ -19,6 +19,7 @@ final class PhotosViewController: UIViewController {
 
     private var photos = [Photo]()
     private var currentPage = 0
+    private var currentFetchRequest: DispatchWorkItem?
 
     // MARK: - Public properties
 
@@ -61,6 +62,20 @@ final class PhotosViewController: UIViewController {
         }
     }
 
+    /// Throttle multiple simultaneous fetch requests within `Constants.Network.throttleDuration`
+    private func fetchDataThrottled() {
+        currentFetchRequest?.cancel()
+
+        let deadline = DispatchTime.now() + Constants.Network.throttleDuration
+        let workItem = DispatchWorkItem { [weak self] in
+            self?.currentPage += 1
+            self?.fetchData(for: self?.currentPage ?? 0)
+        }
+
+        currentFetchRequest = workItem
+        DispatchQueue.main.asyncAfter(deadline: deadline, execute: workItem)
+    }
+
     private func showActivityIndicator(_ show: Bool) {
         UIApplication.shared.isNetworkActivityIndicatorVisible = show
         if !show {
@@ -82,5 +97,17 @@ extension PhotosViewController: UITableViewDataSource {
         let photo = photos[indexPath.row]
 
         return cell.configure(with: photo)
+    }
+}
+
+// MARK: - UIScrollViewDelegate protocol conformance
+
+extension PhotosViewController: UIScrollViewDelegate {
+
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let scrollOffset = scrollView.contentSize.height - scrollView.contentOffset.y - scrollView.frame.height
+        if abs(scrollOffset) < CGFloat.ulpOfOne {
+            fetchDataThrottled()
+        }
     }
 }

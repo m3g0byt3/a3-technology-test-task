@@ -24,6 +24,7 @@ enum Constants {
         static var successStatusCodeRange = 200..<300
         static let requestTimeout: TimeInterval = 15.0
         static let resourceTimeout: TimeInterval = 15.0
+        static let throttleDuration: TimeInterval = 0.5
     }
 
     enum Interface {
