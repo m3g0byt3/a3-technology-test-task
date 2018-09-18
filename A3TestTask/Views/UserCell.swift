@@ -6,9 +6,18 @@
 //  Copyright © 2018 m3g0byt3. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
-final class UserCell: UITableViewCell {}
+final class UserCell: UITableViewCell {
+
+    // MARK: - Public API
+
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        textLabel?.text = nil
+    }
+}
 
 // MARK: - Configurable protocol conformance
 
