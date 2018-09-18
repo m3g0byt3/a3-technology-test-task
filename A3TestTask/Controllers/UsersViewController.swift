@@ -1,5 +1,5 @@
 //
-//  ListViewController.swift
+//  UsersViewController.swift
 //  A3TestTask
 //
 //  Created by m3g0byt3 on 18/09/2018.
@@ -9,4 +9,4 @@
 import Foundation
 import UIKit
 
-final class ListViewController: UIViewController {}
+final class UsersViewController: UIViewController {}

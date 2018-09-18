@@ -10,8 +10,8 @@
 		4131848D2150A75800FAF80C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4131848C2150A75800FAF80C /* AppDelegate.swift */; };
 		413184942150A75900FAF80C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 413184932150A75900FAF80C /* Assets.xcassets */; };
 		413184A22150A7D100FAF80C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 413184A02150A7D100FAF80C /* LaunchScreen.storyboard */; };
-		413184AC2150A87100FAF80C /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413184AA2150A87100FAF80C /* ListViewController.swift */; };
-		413184AD2150A87100FAF80C /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 413184AB2150A87100FAF80C /* ListViewController.xib */; };
+		413184AC2150A87100FAF80C /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413184AA2150A87100FAF80C /* UsersViewController.swift */; };
+		413184AD2150A87100FAF80C /* UsersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 413184AB2150A87100FAF80C /* UsersViewController.xib */; };
 		413184B02150A87F00FAF80C /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413184AE2150A87F00FAF80C /* PhotosViewController.swift */; };
 		413184B12150A87F00FAF80C /* PhotosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 413184AF2150A87F00FAF80C /* PhotosViewController.xib */; };
 		413184B32150A8C300FAF80C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413184B22150A8C300FAF80C /* Constants.swift */; };
@@ -27,8 +27,8 @@
 		413184932150A75900FAF80C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		413184982150A75900FAF80C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		413184A12150A7D100FAF80C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		413184AA2150A87100FAF80C /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
-		413184AB2150A87100FAF80C /* ListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
+		413184AA2150A87100FAF80C /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		413184AB2150A87100FAF80C /* UsersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsersViewController.xib; sourceTree = "<group>"; };
 		413184AE2150A87F00FAF80C /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		413184AF2150A87F00FAF80C /* PhotosViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotosViewController.xib; sourceTree = "<group>"; };
 		413184B22150A8C300FAF80C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -107,8 +107,8 @@
 		413184A52150A80A00FAF80C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				413184AA2150A87100FAF80C /* ListViewController.swift */,
-				413184AB2150A87100FAF80C /* ListViewController.xib */,
+				413184AA2150A87100FAF80C /* UsersViewController.swift */,
+				413184AB2150A87100FAF80C /* UsersViewController.xib */,
 				413184AE2150A87F00FAF80C /* PhotosViewController.swift */,
 				413184AF2150A87F00FAF80C /* PhotosViewController.xib */,
 			);
@@ -195,7 +195,7 @@
 				413184A22150A7D100FAF80C /* LaunchScreen.storyboard in Resources */,
 				413184B12150A87F00FAF80C /* PhotosViewController.xib in Resources */,
 				413184942150A75900FAF80C /* Assets.xcassets in Resources */,
-				413184AD2150A87100FAF80C /* ListViewController.xib in Resources */,
+				413184AD2150A87100FAF80C /* UsersViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,7 +233,7 @@
 				413184BE2150ADF600FAF80C /* UITableView+Extensions.swift in Sources */,
 				413184B62150A93E00FAF80C /* UIViewController+Extensions.swift in Sources */,
 				413184BC2150AD8B00FAF80C /* UITableViewCell+Extensions.swift in Sources */,
-				413184AC2150A87100FAF80C /* ListViewController.swift in Sources */,
+				413184AC2150A87100FAF80C /* UsersViewController.swift in Sources */,
 				413184B32150A8C300FAF80C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
