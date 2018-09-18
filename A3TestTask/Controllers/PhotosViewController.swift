@@ -45,10 +45,10 @@ final class PhotosViewController: UIViewController {
         tableView.rowHeight = UITableView.automaticDimension
     }
 
-        UIApplication.shared.isNetworkActivityIndicatorVisible = true
-            UIApplication.shared.isNetworkActivityIndicatorVisible = false
     private func fetchData(for page: Int) {
+        showActivityIndicator(true)
         photosService.getPhotos(user: user, page: page) { [weak self] result in
+            self?.showActivityIndicator(false)
             switch result {
             case .success(let photos):
                 self?.photos.append(contentsOf: photos)
@@ -58,6 +58,13 @@ final class PhotosViewController: UIViewController {
                 let message = Constants.Strings.errorMessage + error.localizedDescription
                 self?.presentAlert(title: title, message: message)
             }
+        }
+    }
+
+    private func showActivityIndicator(_ show: Bool) {
+        UIApplication.shared.isNetworkActivityIndicatorVisible = show
+        if !show {
+            tableView.flashScrollIndicators()
         }
     }
 }
