@@ -33,6 +33,7 @@
 		414ABF9F2150BFFF00FDE536 /* UserServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABF9E2150BFFF00FDE536 /* UserServiceProtocol.swift */; };
 		414ABFA12150C10600FDE536 /* JSONPlaceholderUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABFA02150C10600FDE536 /* JSONPlaceholderUserService.swift */; };
 		414ABFA32150C2E900FDE536 /* URLSessionConfiguration+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABFA22150C2E900FDE536 /* URLSessionConfiguration+Extensions.swift */; };
+		414ABFA52150C7AB00FDE536 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414ABFA42150C7AB00FDE536 /* Presentable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		414ABF9E2150BFFF00FDE536 /* UserServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServiceProtocol.swift; sourceTree = "<group>"; };
 		414ABFA02150C10600FDE536 /* JSONPlaceholderUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONPlaceholderUserService.swift; sourceTree = "<group>"; };
 		414ABFA22150C2E900FDE536 /* URLSessionConfiguration+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSessionConfiguration+Extensions.swift"; sourceTree = "<group>"; };
+		414ABFA42150C7AB00FDE536 /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 				414ABF8F2150B74700FDE536 /* APIProtocol.swift */,
 				414ABF962150BB3200FDE536 /* URLRepresentable.swift */,
 				414ABF9E2150BFFF00FDE536 /* UserServiceProtocol.swift */,
+				414ABFA42150C7AB00FDE536 /* Presentable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				413184C12150B07100FAF80C /* UserCell.swift in Sources */,
 				414ABF902150B74700FDE536 /* APIProtocol.swift in Sources */,
 				414ABF972150BB3200FDE536 /* URLRepresentable.swift in Sources */,
+				414ABFA52150C7AB00FDE536 /* Presentable.swift in Sources */,
 				414ABF992150BC3A00FDE536 /* Result.swift in Sources */,
 				413184B02150A87F00FAF80C /* PhotosViewController.swift in Sources */,
 				4131848D2150A75800FAF80C /* AppDelegate.swift in Sources */,
