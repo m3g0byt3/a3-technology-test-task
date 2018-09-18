@@ -37,7 +37,12 @@ extension ApplicationAssembly: AssemblyProtocol {
             return UINavigationController(rootViewController: viewController)
 
         case .photos(let user):
-            return PhotosViewController.fromNib()
+            let viewController = PhotosViewController.fromNib()
+
+            viewController.user = user
+            viewController.navigationItem.title = Constants.Strings.photosTitle
+
+            return viewController
         }
     }
 

@@ -12,6 +12,7 @@ enum Constants {
 
     enum Strings {
         static let usersTitle = "Users"
+        static let photosTitle = "Photos"
         static let alertCloseButtonTitle = "OK"
         static let errorTitle = "Error"
         static let errorMessage = "An error has occurred:\n"

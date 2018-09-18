@@ -9,4 +9,10 @@
 import Foundation
 import UIKit
 
-final class PhotosViewController: UIViewController {}
+final class PhotosViewController: UIViewController {
+
+    // MARK: - Public properties
+
+    // swiftlint:disable:next implicitly_unwrapped_optional
+    var user: User!
+}
