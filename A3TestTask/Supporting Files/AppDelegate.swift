@@ -29,10 +29,11 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 
     // TODO: Inject dependencies using DI assembly or service locator
     private func injectDependencies() {
-        let listViewController = ListViewController.fromNib()
+        let usersViewController = UsersViewController.fromNib()
 
+        usersViewController.navigationItem.title = Constants.Strings.usersTitle
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = UINavigationController(rootViewController: listViewController)
+        window?.rootViewController = UINavigationController(rootViewController: usersViewController)
         window?.makeKeyAndVisible()
     }
 }
