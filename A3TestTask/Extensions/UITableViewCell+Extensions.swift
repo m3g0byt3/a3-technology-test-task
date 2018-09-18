@@ -19,3 +19,10 @@ extension UITableViewCell: Reusable {
         return self
     }
 }
+
+extension UITableViewCell: NIBRepresentable {
+
+    static var nib: UINib? {
+        return UINib(nibName: String(describing: self), bundle: nil)
+    }
+}

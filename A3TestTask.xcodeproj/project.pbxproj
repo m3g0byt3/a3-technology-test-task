@@ -19,6 +19,7 @@
 		413184BA2150AD7200FAF80C /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413184B92150AD7200FAF80C /* Reusable.swift */; };
 		413184BC2150AD8B00FAF80C /* UITableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413184BB2150AD8B00FAF80C /* UITableViewCell+Extensions.swift */; };
 		413184BE2150ADF600FAF80C /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413184BD2150ADF600FAF80C /* UITableView+Extensions.swift */; };
+		413184C82150B20600FAF80C /* NIBRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413184C72150B20600FAF80C /* NIBRepresentable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		413184B92150AD7200FAF80C /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		413184BB2150AD8B00FAF80C /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
 		413184BD2150ADF600FAF80C /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		413184C72150B20600FAF80C /* NIBRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NIBRepresentable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				413184B92150AD7200FAF80C /* Reusable.swift */,
+				413184C72150B20600FAF80C /* NIBRepresentable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				4131848D2150A75800FAF80C /* AppDelegate.swift in Sources */,
 				413184BE2150ADF600FAF80C /* UITableView+Extensions.swift in Sources */,
 				413184B62150A93E00FAF80C /* UIViewController+Extensions.swift in Sources */,
+				413184C82150B20600FAF80C /* NIBRepresentable.swift in Sources */,
 				413184BC2150AD8B00FAF80C /* UITableViewCell+Extensions.swift in Sources */,
 				413184AC2150A87100FAF80C /* UsersViewController.swift in Sources */,
 				413184B32150A8C300FAF80C /* Constants.swift in Sources */,

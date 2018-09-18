@@ -36,4 +36,10 @@ extension UITableView {
     func register(_ aReusable: Reusable.Type) {
         register(aReusable.reusableType, forCellReuseIdentifier: aReusable.reuseIdentifier)
     }
+
+    /// Register cell that conforms to `NIBRepresentable` protocol.
+    /// - parameter aReusable: Cell class that conforms to `NIBRepresentable` protocol.
+    func register(_ aReusable: NIBRepresentable.Type) {
+        register(aReusable.nib, forCellReuseIdentifier: aReusable.reuseIdentifier)
+    }
 }
