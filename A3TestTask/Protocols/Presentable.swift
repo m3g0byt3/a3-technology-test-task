@@ -20,3 +20,5 @@ extension Presentable where Self: UIViewController {
 
     var presentableEntity: UIViewController { return self }
 }
+
+extension UIViewController: Presentable {}
