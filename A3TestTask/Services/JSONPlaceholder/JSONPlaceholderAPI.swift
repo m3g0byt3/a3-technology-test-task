@@ -30,10 +30,10 @@ extension JSONPlaceholderAPI: APIProtocol {
         switch self {
 
         case .getUsers:
-            return "users"
+            return "/users"
 
         case .getPhotos:
-            return "albums"
+            return "/albums"
         }
     }
 
