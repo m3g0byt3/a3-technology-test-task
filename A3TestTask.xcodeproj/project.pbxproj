@@ -19,6 +19,8 @@
 		413184BA2150AD7200FAF80C /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413184B92150AD7200FAF80C /* Reusable.swift */; };
 		413184BC2150AD8B00FAF80C /* UITableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413184BB2150AD8B00FAF80C /* UITableViewCell+Extensions.swift */; };
 		413184BE2150ADF600FAF80C /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413184BD2150ADF600FAF80C /* UITableView+Extensions.swift */; };
+		413184C12150B07100FAF80C /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413184BF2150B07100FAF80C /* UserCell.swift */; };
+		413184C22150B07100FAF80C /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 413184C02150B07100FAF80C /* UserCell.xib */; };
 		413184C42150B0A100FAF80C /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413184C32150B0A100FAF80C /* Configurable.swift */; };
 		413184C82150B20600FAF80C /* NIBRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413184C72150B20600FAF80C /* NIBRepresentable.swift */; };
 /* End PBXBuildFile section */
@@ -38,6 +40,8 @@
 		413184B92150AD7200FAF80C /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		413184BB2150AD8B00FAF80C /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
 		413184BD2150ADF600FAF80C /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		413184BF2150B07100FAF80C /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		413184C02150B07100FAF80C /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
 		413184C32150B0A100FAF80C /* Configurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
 		413184C72150B20600FAF80C /* NIBRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NIBRepresentable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,6 +101,8 @@
 		413184A32150A7FF00FAF80C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				413184BF2150B07100FAF80C /* UserCell.swift */,
+				413184C02150B07100FAF80C /* UserCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -199,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				413184A22150A7D100FAF80C /* LaunchScreen.storyboard in Resources */,
+				413184C22150B07100FAF80C /* UserCell.xib in Resources */,
 				413184B12150A87F00FAF80C /* PhotosViewController.xib in Resources */,
 				413184942150A75900FAF80C /* Assets.xcassets in Resources */,
 				413184AD2150A87100FAF80C /* UsersViewController.xib in Resources */,
@@ -235,6 +242,7 @@
 			files = (
 				413184C42150B0A100FAF80C /* Configurable.swift in Sources */,
 				413184BA2150AD7200FAF80C /* Reusable.swift in Sources */,
+				413184C12150B07100FAF80C /* UserCell.swift in Sources */,
 				413184B02150A87F00FAF80C /* PhotosViewController.swift in Sources */,
 				4131848D2150A75800FAF80C /* AppDelegate.swift in Sources */,
 				413184BE2150ADF600FAF80C /* UITableView+Extensions.swift in Sources */,

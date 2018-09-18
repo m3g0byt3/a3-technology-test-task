@@ -25,7 +25,7 @@ final class UsersViewController: UIViewController {
     // MARK: - Private API
 
     private func setupUI() {
-        tableView.register(UITableViewCell.self)
+        tableView.register(UserCell.self)
         tableView.tableFooterView = UIView()
     }
 }
@@ -39,6 +39,17 @@ extension UsersViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return tableView.dequeueReusableCell(for: indexPath)
+        let cell: UserCell = tableView.dequeueReusableCell(for: indexPath)
+
+        return cell.configure(with: "Test User")
+    }
+}
+
+// MARK: - UITableViewDelegate protocol conformance
+
+extension UsersViewController: UITableViewDelegate {
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
