@@ -26,6 +26,15 @@ struct JSONPlaceholderPhotoService {
 extension JSONPlaceholderPhotoService: PhotosServiceProtocol {
 
     func getPhotos(user: User, page: Int, completion: @escaping PhotosServiceProtocol.Completion) {
-        provider.performRequest(.getPhotos(user: user, page: page), completion: completion)
+        provider.performRequest(.getPhotos(user: user, page: page)) { (result: Result<[Album], NetworkError>) in
+            switch result {
+            case .success(let albums):
+                // TODO: Implement custom `init(from:)` in `Photos` model instead of temp. mapping to the `Album` model.
+                let photos = albums.flatMap { $0.photos }
+                completion(.success(photos))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
     }
 }
